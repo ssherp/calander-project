@@ -1,11 +1,23 @@
 // globle variable
-var
+var currentHour=dayjs().hour()
 
 
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
 $(function () {
+  for(var i=9;i<18;i++){
+   var textarea=$("#hour-"+i).children("textarea");
+   if(currentHour===i){
+    textarea.addClass("present");
+   } else if(currentHour>i){
+    textarea.addClass("past");
+   }
+   else{
+    textarea.addClass("future");
+   }
+    
+  }
 
   // TODO: Add a listener for click events on the save button. This code should
   
