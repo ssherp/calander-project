@@ -1,7 +1,6 @@
 // globle variable
 var currentHour=dayjs().hour()
 
-
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
@@ -32,6 +31,12 @@ $(function () {
     //console.log($(this));
     //fugure out what hour block you're in by using $(this)
     //setItem for localStorage to save the input to the corresponding hour by using heword "this"})
+  var count=0
+    $(".saveBtn").on("click",function(){
+      var notes=$(this).siblings(".description").val();
+      localStorage.setItem("#hour-"+count,notes);
+  count++
+ })
 
 
   
@@ -56,11 +61,10 @@ $(function () {
   
   
   
-  // TODO: Add code to display the current date in the header of the page.
+  
     //create var for dayjs to get current day (and time maybe)
     //$("#currentDay").text(var)
-   
-      $("#currentDay").text(dayjs().format("MMM DD,YYYY,  h:mm:ss"));
+   $("#currentDay").text(dayjs().format("MMM DD,YYYY,  h:mm:ss"));
       
   
 
