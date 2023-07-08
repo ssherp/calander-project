@@ -31,15 +31,27 @@ $(function () {
     //console.log($(this));
     //fugure out what hour block you're in by using $(this)
     //setItem for localStorage to save the input to the corresponding hour by using heword "this"})
-  var count=0
+  var count=9
     $(".saveBtn").on("click",function(){
       var notes=$(this).siblings(".description").val();
-      localStorage.setItem("#hour-"+count,notes);
-  count++
+      var taskKey=$(this).parent().attr("id")
+      localStorage.setItem(taskKey,notes);
+  
+  
+  
+   
+
  })
 
-
+   for (var i=9;i<18;i++){
+   var keyOutput= localStorage.getItem(`hour-${i}`);
+   var hourOutput= $(`#hour-${i}`).children(".description");
+   hourOutput.append(keyOutput);
+   }
   
+
+
+   
   //use the id as the key to save the text to the key
   //create a .on event clicker
   //create 2 variable based on on the id and the text content(getting the text)
