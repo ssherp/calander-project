@@ -59,17 +59,12 @@ $(function () {
   // TODO: Add code to display the current date in the header of the page.
     //create var for dayjs to get current day (and time maybe)
     //$("#currentDay").text(var)
+   
+      $("#currentDay").text(dayjs().format("MMM DD,YYYY,  h:mm:ss"));
+      
+  
 
 });
   
-
-//pseudo code
-//step1
-//create all variable globale variable
-//var1-query selector for time at the top
-
-//step 2 create a section for your function
-//create function to handle the ave button
-//create function populates the content and color of the different elements on the page
 
 //event listener and a function to start the program/load the info on the calander
