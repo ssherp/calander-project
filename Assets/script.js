@@ -15,14 +15,12 @@ $(function () {
       textarea.addClass("future");
     }
   }
-  //$(.saveBtn").on("click",function(){
-  //console.log($(this));
   //fugure out what hour block you're in by using $(this)
   //setItem for localStorage to save the input to the corresponding hour by using heword "this"})
 
   $(".saveBtn").on("click", function () {
     var notes = $(this).siblings(".description").val();
-    var taskKey = $(this).parent().attr("id")
+    var taskKey = $(this).parent().attr("id");
     localStorage.setItem(taskKey, notes);
   })
   //a. separate key in localStorage for each hour

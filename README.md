@@ -1,4 +1,4 @@
-# 05 Third-Party APIs: Work Day Scheduler
+# Calander Project
 
 ## Your Task
 
