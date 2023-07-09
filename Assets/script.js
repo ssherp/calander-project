@@ -15,8 +15,8 @@ $(function () {
       textarea.addClass("future");
     }
   }
-  //fugure out what hour block you're in by using $(this)
-  //setItem for localStorage to save the input to the corresponding hour by using heword "this"})
+  //figure out what hour block you're in by using $(this)
+  //setItem for localStorage to save the input to the corresponding hour by using the word "this"})
 
   $(".saveBtn").on("click", function () {
     var notes = $(this).siblings(".description").val();

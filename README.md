@@ -2,6 +2,11 @@
 
 ## Description
 The Work Day Scheduler is a web application that allows users to schedule their work day by entering tasks for each hour. The application provides a visual representation of time blocks for each hour from 9 AM to 5 PM. The time blocks are color-coded based on the current time, indicating past, present, and future hours. Users can enter their tasks in the corresponding time block and save them using the save button.
+<br>[visit the Deployed site](https://ssherp.github.io/calender-project/)
+
+## Usage
+
+![Calender site screenshot](./Assets/images/screenshot-Schelduler.png)
 
 ## Features
 -	Dynamic time block colors: The time blocks are dynamically styled based on the current time, providing a clear indication of past, present, and future hours.
@@ -17,6 +22,12 @@ By working on this project, I have gain experience in:
 5.	Working with external libraries to enhance JavaScript functionality.
 6.	Developing a user-friendly interface with clear visual cues.
 Overall, this project was a valuable opportunity to reinforce my knowledge of front-end web development concepts and enhance my skills in building interactive web applications.
+
+### Sonam Sherpa 
+
+* [Portfolio](https://ssherp.github.io/portfolio/)
+* [LinkedIn](https://www.linkedin.com/in/sonam-sherpa-306559280)
+* [Github](https://github.com/ssherp/calender-project)
 
 ## How to Use
 1.	Open the Work Day Scheduler in your web browser.
