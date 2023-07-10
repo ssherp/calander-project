@@ -33,7 +33,9 @@ $(function () {
   }
   //create var for dayjs to get current day (and time maybe)
   //$("#currentDay").text(var)
-  $("#currentDay").text(dayjs().format("MMM DD,YYYY,  h:mm:ss"));
+  var now = setInterval(function(){
+    $("#currentDay").text(dayjs().format("MMM DD,YYYY,  h:mm:ss")); 
+    },1000)
 
 
 });
